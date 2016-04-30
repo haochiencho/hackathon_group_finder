@@ -8,12 +8,22 @@ users.controller('user', function ($scope) {
     $scope.phones = [
         {'first_name': 'Ashley',
             'last_name': 'Tsao',
-            'thing': 'f'
+            'areas_of_interest': 'Front End',
+            'email': 'something@gmail.com',
+            'phone_number': '18005555'
         },
-        {'name': 'Motorola XOOM™ with Wi-Fi',
-            'snippet': 'The Next, Next Generation tablet.'},
-        {'name': 'MOTOROLA XOOM™',
-            'snippet': 'The Next, Next Generation tablet.'}
+        {'first_name': 'Brian',
+            'last_name': 'Cho',
+            'areas_of_interest': 'Front End',
+            'email': 'something@gmail.com',
+            'phone_number': '18005555'
+        },
+        {'first_name': 'Will',
+            'last_name': 'Yu',
+            'areas_of_interest': 'Front End',
+            'email': 'something@gmail.com',
+            'phone_number': '18005555'
+        }
     ];
 });
 

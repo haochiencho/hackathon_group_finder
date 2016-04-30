@@ -14,19 +14,19 @@
             <ul class="phones">
                 <li ng-repeat="phone in phones" class="thumbnail">
                     <p class="name">
-                        name
+                        {{phone.first_name}} {{phone.last_name}}
                     </p>
                     <p>
                         areas of interest
                     </p>
                     <p>
-                        email
+                        {{phone.email}}
                     </p>
                     <p>
                         social
                     </p>
                     <p>
-                        phone
+                        {{phone.phone_number}}
                     </p>
                 </li>
             </ul>

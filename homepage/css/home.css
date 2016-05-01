@@ -49,7 +49,7 @@ input:focus, select:focus { outline: 2px solid #c1c1c1; outline: 2px solid rgba(
 .LayoutFrame { margin: 0 auto; width: 100%; display: block; }
 
 /* <<< Body >>> */
-body { background: #fff; }
+body { background: lightgray; }
 
 /* <<< Header >>> */
 header { width: 100%; position: fixed; top: 0px; left: 0px; height: 60px; background: #030303; z-index: 9; }
@@ -126,7 +126,7 @@ header.smaller .Navigation li { height: 60px; }
 .mobile.closed .fa-times { display: block; }
 
 /* <<< Banner Section >>> */
-.Banner_sec { width: 100%; opacity: 1; height: 687px; position: relative; background: lightgray;}
+.Banner_sec { width: 100%; opacity: 1; margin-top: 10%; height: 687px; position: relative; background: lightgray;}
 #logo {
     z-index: -1;
     display: block;

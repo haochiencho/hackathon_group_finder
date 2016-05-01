@@ -19,7 +19,9 @@ $( "#next2" ).click(function() {
 $( "#next3" ).click(function() {
     first_name = $('#firstNameInput').val();
     last_name = $('#lastNameInput').val();
-    myDataRef.push({ email: email, password: password, twitter: twitter, facebook: facebook, google: google, first_name: first_name, last_name: last_name});
+    phone_number = $('#phone_number').val();
+    comment = $('#comment').val();
+    myDataRef.push({ email: email, password: password, twitter: twitter, facebook: facebook, google: google, first_name: first_name, last_name: last_name, phone_number: phone_number, comment: comment});
 
     window.location.href = "../browse_template/index.html";
 
@@ -27,17 +29,4 @@ $( "#next3" ).click(function() {
 
 
 
-$( "#save" ).click(function() {
-    var front_end = $('.front_end').val();
-
-
-});
-
-myDataRef.on('child_added', function(snapshot) {
-    var message = snapshot.val();
-});
-
-function displayChatMessage() {
-    alert('Hello');
-}
 

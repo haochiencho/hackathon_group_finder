@@ -17,11 +17,11 @@ $( "#next2" ).click(function() {
 
 
 $( "#next3" ).click(function() {
-    alert('Hello');
-
     first_name = $('#firstNameInput').val();
     last_name = $('#lastNameInput').val();
     myDataRef.push({ email: email, password: password, twitter: twitter, facebook: facebook, google: google, first_name: first_name, last_name: last_name});
+
+    window.location.href = "../browse_template/index.html";
 
 });
 

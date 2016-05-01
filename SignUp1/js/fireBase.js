@@ -21,8 +21,8 @@ $( "#next3" ).click(function() {
     last_name = $('#lastNameInput').val();
     phone_number = $('#phone_number').val();
     comment = $('#comment').val();
-    myDataRef.push({ email: email, password: password, twitter: twitter, facebook: facebook, google: google, first_name: first_name, last_name: last_name, phone_number: phone_number, comment: comment});
 
+    myDataRef.push({ email: email, password: password, twitter: twitter, facebook: facebook, google: google, first_name: first_name, last_name: last_name, phone_number: phone_number, comment: comment});
     window.location.href = "../browse_template/index.html";
 
 });

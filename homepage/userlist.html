@@ -48,6 +48,7 @@
 <script src="js/script.js"></script>
 
 <script>
+
     var my_data = new Firebase('https://dazzling-torch-3292.firebaseio.com/');
 
 
@@ -55,25 +56,32 @@
     users.controller('user', function ($scope, $firebaseObject) {
         var ref = new Firebase("https://dazzling-torch-3292.firebaseio.com");
         $scope.data = $firebaseObject(ref);
-        $scope.phones = [
-        ];
+
+
+        $scope.phones = [];
         var syncObject = $firebaseObject(ref);
         syncObject.$bindTo($scope, "data");
 
-        my_data.on('child_added', function(snapshot) {
 
-            $scope.data = snapshot.val();
+        console.log(document.URL);
+        console.log("#");
+        if (document.URL == "http://localhost:63342/team_finder/homepage/userlist.html") {
+            my_data.on('child_added', function (snapshot) {
 
-            var phone_element = {
-                'first_name': $scope.data.first_name,
-                'last_name': $scope.data.last_name,
-                'email': $scope.data.email,
-                'phone_number': $scope.data.phone_number,
-                'comment': $scope.data.comment
-            };
+                $scope.data = snapshot.val();
 
-            $scope.phones.push(phone_element);
-        });
+                var phone_element = {
+                    'first_name': $scope.data.first_name,
+                    'last_name': $scope.data.last_name,
+                    'email': $scope.data.email,
+                    'phone_number': $scope.data.phone_number,
+                    'comment': $scope.data.comment
+                };
+
+                $scope.phones.push(phone_element);
+            });
+        }
+
 
     });
 

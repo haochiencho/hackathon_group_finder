@@ -1,43 +1,54 @@
-ul {
+ol, ul {
+    list-style: none;
+}
 
+body {
+    font-family: arial narrow;
+    font-size: 15px;
+    color: #404040;
+    text-spacing: 3px !important;
+    line-spacing: 15px !important;
+    background: #fff;
+}
+
+.register {
+    margin: 0px 0px 10px 0px;
+    width: 650px;
+    padding: 20px;
+    background: #f4f4f4;
+    height: 160px;
+    border-radius: 3px;
 }
 
 .row {
-    display: inline-block;
-    position: fixed;
-    margin: 3px;
-    width: 520px;
+    position: absolute;
+    margin: 30px;
+    background-color: transparent;
+    border: none;
     height: 180px;
-    background-color: #f2f2f2;
-    border: 1px solid #696969;
 }
 
-.row .name {
+.name {
     width: auto;
-    margin-left: -27px;
+    height: 35px;
+    margin-left: -12px;
     text-transform: uppercase;
-    margin-top: -8px;
+    text-align: left;
+    margin-top: -13px;
     font-family: 'Poiret One', cursive;
     font-size: 35px;
     position: relative;
     list-style-type:none;
 }
 
-.row .interest{
-    margin-left: -39px;
-    border: 2px solid black;
-    height: 100px;
-    width: 270px;
-    text-align: center;
-    padding: 1px;
-    font-family: arial narrow;
-    font-size: 17px;
-    line-height: 23px;
-    position: absolute;
-    list-style-type: square;
+.list {
+    text-align: left;
+    width: 130px;
 }
 
-
-.row .social {
-    margin-left: 10px;
+.social{
+    position: absolute;
+    width: 35px;
+    margin-top: -150px;
+    margin-left: 90%;
 }

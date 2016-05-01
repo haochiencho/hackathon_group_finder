@@ -19,11 +19,16 @@ $( "#next2" ).click(function() {
 $( "#next3" ).click(function() {
     alert('Hello');
 
-    var first_name = $('#firstNameInput').val();
-    var last_name = $('#lastNameInput').val();
+    first_name = $('#firstNameInput').val();
+    last_name = $('#lastNameInput').val();
     myDataRef.push({ email: email, password: password, twitter: twitter, facebook: facebook, google: google, first_name: first_name, last_name: last_name});
-    first_name.val('');
-    last_name.val('');
+
+});
+
+
+
+$( "#save" ).click(function() {
+    var front_end = $('.front_end').val();
 
 
 });
